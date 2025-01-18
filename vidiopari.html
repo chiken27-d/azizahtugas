@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #a2d9e9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .video-placeholder {
+        width: 780px; /* 96 * 4 */
+        height: 422px; /* 48 * 4 */
+        border-radius: 12px;
+        margin-bottom: 24px;
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .title {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        margin-right: 16px;
+      }
+      .caption {
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video-placeholder">
+        <video width="780" height="422" controls poster="images/2x/thumb.jpg">
+          <source src="video/vidio2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="text">
+        <h1 class="title">VIDEO</h1>
+        <p class="caption">
+          BERIKUT ADALAH CONTOH CAPTION<br />
+          UNTUK VIDEO PENJELASAN 3 FAKTA<br />
+          MENARIK TENTANG IKAN PARI:
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

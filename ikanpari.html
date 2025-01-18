@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Materi</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Menyembunyikan scroll bar */
+      }
+
+      /* Menetapkan ukuran dan posisi video sebagai latar belakang */
+      .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Menjaga rasio aspek video */
+        z-index: -1; /* Menempatkan video di bawah konten lainnya */
+      }
+
+      /* Animasi untuk fade-in */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column; /* Atur tombol berjajar ke bawah */
+        gap: 15px; /* Jarak antar tombol */
+        animation: fadeIn 1s ease-out; /* Animasi fade-in untuk tombol */
+      }
+
+      button {
+        background-color: #337ab7;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 400px; /* Lebar tetap untuk semua tombol */
+        height: 70px;
+        text-align: center; /* Menjaga teks tetap di tengah */
+        margin-bottom: 10px;
+        margin-left: 150px;
+        opacity: 0; /* Awalnya tidak terlihat */
+        animation: fadeIn 1s ease-out forwards; /* Animasi fade-in pada tombol */
+        transition: background-color 0.3s, transform 0.3s; /* Transisi halus untuk background dan transform */
+      }
+
+      /* Efek hover pada tombol */
+      button:hover {
+        background-color: #285e8e; /* Ubah warna tombol saat hover */
+        transform: translateY(-5px); /* Angkat tombol sedikit saat hover */
+      }
+
+      .image-container {
+        width: 650px;
+        height: 650px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-right: 15px;
+        animation: fadeIn 1.5s ease-out forwards; /* Animasi fade-in pada gambar */
+        transition: transform 0.3s; /* Transisi halus saat hover */
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* Awalnya tidak terlihat */
+        animation: fadeIn 2s ease-out forwards; /* Animasi fade-in pada gambar */
+        transition: transform 0.3s; /* Transisi halus saat hover */
+      }
+
+      /* Efek hover pada gambar */
+      .image-container:hover img {
+        transform: scale(1.05); /* Memperbesar gambar sedikit saat hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Video latar belakang -->
+    <video class="background-video" autoplay muted loop>
+      <source src="video/bgvid.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+      <div class="button-container">
+        <a href="materiikanpari.html">
+          <button>MATERI</button>
+        </a>
+        <a href="vidiopari.html"><button>VIDEO PEMBELAJARAN</button></a>
+        <a href="quizpari.html"><button>QUIZ</button></a>
+      </div>
+      <div class="image-container">
+        <img src="images/2x/Asset 54xhdpi.png" alt="Stingray" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Ganda</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        margin: 0;
+        padding: 0;
+        /* Menambahkan gambar latar belakang */
+        background-image: url("images/2x/hiubg.jpg"); /* Ganti dengan path gambar Anda */
+        background-size: cover; /* Gambar menutupi seluruh halaman */
+        background-position: center; /* Posisi gambar di tengah */
+        background-attachment: fixed; /* Agar latar belakang tetap saat scroll */
+        height: 100vh; /* Agar gambar latar belakang mencakup seluruh tinggi halaman */
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #ffffff;
+      }
+
+      .quiz-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 20px;
+        padding: 20px;
+        width: 80%;
+        max-width: 900px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .quiz-text p {
+        flex: 1;
+        color: #ffffff; /* Warna teks biru tua */
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column; /* Vertikal alignment */
+        justify-content: center; /* Teks dan tombol sejajar */
+        font-family: "Vogue", cursive;
+      }
+
+      .quiz-text h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      .quiz-text p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      .quiz-button {
+        margin-top: 10px; /* Sesuaikan jarak antara teks dan tombol */
+      }
+
+      .quiz-button a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #274d85; /* Warna tombol biru gelap */
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .quiz-button a:hover {
+        background-color: #1e3b66;
+      }
+
+      .quiz-image {
+        flex: 1;
+        background-image: url("your-image-path.jpg"); /* Ganti dengan path gambar */
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        height: 200px; /* Atur tinggi gambar */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="quiz-container">
+          <div class="quiz-text">
+            <h1>QUIZ</h1>
+            <div class="quiz-button">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeL5-YFkKo7rHnzf1lJ4J0O-vAMItbBRidxb84eS6eyyQ1jzg/viewform?usp=dialog"
+                >CLICK HERE</a
+              >
+            </div>
+            <p>
+              SUDAH PAHAM DENGAN MATERI YANG BARU SAJA DIBAHAS?<br />
+              AYO, UJI PENGETAHUANMU DENGAN MENGERJAKAN QUIZ!
+            </p>
+          </div>
+          <div class="quiz-image"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #add8e6; /* Warna biru muda untuk latar belakang */
+    }
+
+    .quiz-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #d6ecf9; /* Warna biru muda lebih terang */
+      border-radius: 20px;
+      padding: 20px;
+      width: 80%;
+      max-width: 900px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .quiz-text {
+      flex: 1;
+      color: #000080; /* Warna teks biru tua */
+      padding-right: 20px;
+    }
+
+    .quiz-text h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .quiz-text p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .quiz-button {
+      margin-top: 20px;
+    }
+
+    .quiz-button a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #274d85; /* Warna tombol biru gelap */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .quiz-button a:hover {
+      background-color: #1e3b66;
+    }
+
+    .quiz-image {
+      flex: 1;
+      background-image: url('your-image-path.jpg'); /* Ganti dengan path gambar */
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      height: 200px; /* Atur tinggi gambar */
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="quiz-text">
+      <h1>QUIZ</h1>
+      <div class="quiz-button">
+        <a href="#">CLICK HERE</a>
+      </div>
+      <p>
+        SUDAH PAHAM DENGAN MATERI YANG BARU SAJA DIBAHAS?<br>
+        AYO, UJI PENGETAHUANMU DENGAN MENGERJAKAN QUIZ!
+      </p>
+    </div>
+    <div class="quiz-image"></div>
+  </div>
+</body>
+</html> -->

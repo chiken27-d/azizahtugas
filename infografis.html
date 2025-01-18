@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("images/2x/Asset\ 32xhdpi.png"); /* Ganti dengan path gambar Anda */
+        background-size: cover; /* Gambar menutupi seluruh halaman */
+        background-position: center; /* Posisi gambar di tengah */
+        background-attachment: fixed; /* Agar latar belakang tetap saat scroll */
+        height: 100vh; /* Agar gambar latar belakang mencakup seluruh tinggi halaman */
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .left-spot,
+      .right-spot {
+        width: 50%;
+        height: 70%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column; /* Mengatur agar elemen diatur secara vertikal */
+        justify-content: center; /* Elemen di tengah secara vertikal */
+        align-items: center;
+      }
+
+      .left-spot {
+        margin-left: 20px;
+      }
+
+      .right-spot {
+        margin-right: 5%;
+        color: white; /* Ubah warna font menjadi putih */
+        text-align: justify; /* Penerapan justify pada paragraf */
+      }
+
+      .right-spot h1 {
+        font-size: 3rem; /* Besarkan ukuran font */
+        text-align: center; /* Buat teks judul berada di tengah */
+        margin-bottom: 20px; /* Tambahkan jarak antara h1 dan p */
+      }
+
+      .right-spot p {
+        font-size: 1.4rem; /* Sesuaikan ukuran font */
+        line-height: 1.6; /* Atur jarak antar baris */
+        text-align: justify;
+        padding: 0 20px; /* Berikan padding horizontal */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Spot untuk foto di sebelah kiri -->
+    <div class="left-spot">
+      <img
+        src="images/2x/infografis digital.jpg"
+        alt="Foto"
+        style="max-width: 100%; max-height: 100%; border-radius: 10px"
+      />
+    </div>
+
+    <!-- Spot untuk tulisan di sebelah kanan -->
+    <div class="right-spot">
+      <h1>INFOGRAFIS</h1>
+      <p>
+        TAHUKAH KAMU BAHWA IKAN HIU MEMILIKI BANYAK KEUNIKAN YANG LUAR BIASA?
+        DARI GIGI YANG TERUS BERGANTI, HINGGA KEMAMPUANNYA MENDETEKSI GERAKAN DI
+        DALAM AIR, IKAN HIU BENAR-BENAR MAHKLUK LAUT YANG MENAKJUBKAN!
+      </p>
+    </div>
+  </body>
+</html>
